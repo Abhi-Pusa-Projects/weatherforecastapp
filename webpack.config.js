@@ -2,11 +2,11 @@ var webpack = require('webpack');
 var path = require('path');
 module.exports = {
     entry: {
-        app:"./public/app/app.js"
+        app:"./public/components/app.js"
     },
     output:{
-      filename:"public/build/bundle.js",
-      sourceMapFilename:"public/build/bundle.map"
+      filename:"./public/build/bundle.js",
+      sourceMapFilename:"./public/build/bundle.map"
     },
     devtool:"#source-map",
     module: {
