@@ -1,8 +1,25 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
+#appbase{
+  //background:url('./background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:640px;
+  width:100%;
+}
+#header{
+  height:640px;
+  width:100%;
+  //background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+#header h1{
+  color:#fff;
 }
 
-a {
-  color: #00B7FF;
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
 }

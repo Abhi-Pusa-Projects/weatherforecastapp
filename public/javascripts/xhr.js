@@ -19,16 +19,3 @@ var AjaxRequest = function(url,callback, failCallback) {
   xmlhttp.open("GET", url, true);
   xmlhttp.send();
 };
-
-var AjaxRequestsMulti = function(urls, callbackMulti, failCallbackMulti) {
-
-  var callback = function(responseText, url) {
-        callbackMulti(responseText);
-  };
-
-  var failCallback = function(url) {
-    failCallbackMulti(url);
-  };
-
-    AjaxRequest(urls, callback, failCallback);
-};

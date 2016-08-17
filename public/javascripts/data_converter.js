@@ -1,8 +1,10 @@
 //function to convert the raw data from weather app to actual data used by d3 graphs
-function rawtoactualdataconverter(temp_json){
+function rawtoactualdataconverter(tempjson){
   var date_array = [];
   var data_array =[];
   var count_array= [];
+  //console.log("rawdataconvert",tempjson);
+  var temp_json = JSON.parse(tempjson);
   for(var i=0;i<temp_json.list.length;i++){
     //console.log(temp_json.list[i].dt_txt,temp_json.list[i].main.temp);
     var d = new Date(temp_json.list[i].dt_txt.split(' ')[0]);
